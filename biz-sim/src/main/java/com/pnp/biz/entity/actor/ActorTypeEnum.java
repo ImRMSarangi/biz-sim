@@ -4,10 +4,10 @@ import com.fasterxml.jackson.annotation.JsonValue;
 
 public enum ActorTypeEnum {
 	
-	D ("Dealer"),
+	S ("Seller"),
 	C ("Customer"),
-	V ("Delivery Partner"),
-	S ("Delivery Addressee");
+	P ("Delivery Partner"),
+	D ("Delivery Addressee");
 	
 	private String name;
 

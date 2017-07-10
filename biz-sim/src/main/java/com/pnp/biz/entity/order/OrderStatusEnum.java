@@ -7,14 +7,15 @@ public enum OrderStatusEnum {
 	P ("Placed"),
 	N ("Notified"),
 	A ("Accepted"),
-	C ("Packaged"),
+	K ("Packaged"),
 	S ("Shipped"),
 	O ("Out For Delivery"),
 	D ("Delivered"),
 	Q ("Return Requested"),
 	R ("Returned"),
 	E ("Exchange Requsted"),
-	X ("Exchanged");
+	X ("Exchanged"),
+	C ("Received");
 	
 	private String name;
 	

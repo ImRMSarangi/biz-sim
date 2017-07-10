@@ -12,6 +12,8 @@ public class OrderDetail {
 	private Actor deliveryTo;
 	private Actor acceptedBy;
 	private Date acceptedOn;
+	private Actor shippedBy;
+	private Date shippedOn;
 	private Actor deliveredBy;
 	private Date deliveredOn;
 }

@@ -13,12 +13,13 @@ public class Price {
 	private BigDecimal discount;
 	private BigDecimal finalPrice;
 	private Currency currency;
+	private Tax tax;
 
 	private Price() {
 		super();
 	}
 
-	private Price(BigDecimal actualPrice, BigDecimal discount, BigDecimal finalPrice, Currency currency) {
+	private Price(BigDecimal actualPrice, BigDecimal discount, BigDecimal finalPrice, Currency currency, Tax tax) {
 		super();
 		this.actualPrice = actualPrice;
 		this.discount = discount;
@@ -27,12 +28,12 @@ public class Price {
 	}
 
 	public Price newInstanceFor(final String stringedActualPrice, final String stringedDiscount,
-			final String stringedFinalPrice, final Currency currency) {
+			final String stringedFinalPrice, final Currency currency, Tax tax) {
 		BigDecimal bigDecActualPrice = new BigDecimal(stringedActualPrice).setScale(SCALE);
 		BigDecimal bigDecDiscount = new BigDecimal(stringedDiscount).setScale(SCALE);
 		BigDecimal bigDecFinalPrice = new BigDecimal(stringedFinalPrice).setScale(SCALE);
 		
-		return new Price(bigDecActualPrice, bigDecDiscount, bigDecFinalPrice, currency);
+		return new Price(bigDecActualPrice, bigDecDiscount, bigDecFinalPrice, currency, tax);
 	}
 
 }
