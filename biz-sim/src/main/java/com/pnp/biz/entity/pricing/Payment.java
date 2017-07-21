@@ -4,10 +4,10 @@ import java.util.Date;
 
 public class Payment {
 
-	private long id;
+	private Long id;
 	private PaymentTypeEnum paymentType;
 	private PaymentStatusEnum paymentStatus;
-	private Price price;
+	private Money amount;
 	private Date date;
 	private String transactionId;
 	

@@ -1,8 +1,8 @@
-package com.pnp.biz.entity.product;
+package com.pnp.biz.entity.item;
 
 public class ProductCategory {
 
-	private long id;
+	private Long id;
 	private String name;
 	private String description;
 }
