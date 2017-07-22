@@ -16,6 +16,7 @@
 			
 			<!-- Disable the second-level cache -->
 			<property name="cache.provider_class">org.hibernate.NoCacheProvider</property>
+			
 			<!-- Echo all executed SQL to stdout -->
 			<property name="show_sql">1</property>
 			
@@ -23,7 +24,8 @@
 			<property name="hbmdl.auto">update</property>
 			
 			<!-- Names the annotated entity class -->
-			<mapping class="com.ajo.common_dto.TestTable"/>
+			<mapping class="com.pnp.biz.entity.order.Order"/>
+			<mapping class="com.pnp.biz.entity.order.OrderDetail"/>
 		
 		</session-factory>
 	</hibernate-configuration>
